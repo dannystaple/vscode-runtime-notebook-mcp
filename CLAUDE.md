@@ -2,6 +2,15 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Red Lines
+
+**Security:** Never echo secret tokens to stdout/logs; redact credentials in scripts before running.
+
+- Don't exfiltrate private or secret data. Ever.
+- Don't run destructive commands without asking.
+- **Never resolve a PR review comment.** You may reply to a thread explaining what was done or why something won't change, but a human must press the Resolve button. Always.
+- When in doubt, ask.
+
 ## Build and Test Commands
 
 ```bash
